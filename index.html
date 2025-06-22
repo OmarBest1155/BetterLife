@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterLife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="background-animation" id="backgroundAnimation"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-image"></div>
+                <div>
+                    <h1>BetterLife</h1>
+                    <p class="tagline">Transform Your Fitness Journey</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-container">
+        <div class="nav-tabs">
+            <button class="nav-tab" onclick="scrollToSection('download')">📥 Download</button>
+            <button class="nav-tab" onclick="scrollToSection('features')">✨ Features</button>
+            <button class="nav-tab" onclick="scrollToSection('requirements')">⚙️ Requirements</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Download Section -->
+        <section id="download" class="scroll-animate">
+            <div class="download-section">
+                <h2 class="section-title">Download BetterLife</h2>
+                <p class="section-subtitle">
+                    Take your workout management to the next level with our powerful desktop application. 
+                    Track your progress, manage your routines, and achieve your fitness goals.
+                </p>
+                
+                <div class="download-grid">
+                    <div class="download-card">
+                        <div class="platform-icon">🖥️</div>
+                        <h3 class="platform-name">Windows</h3>
+                        <p class="platform-description">
+                            Compatible with Windows 10 and 11. Full-featured desktop experience with advanced workout tracking.
+                        </p>
+                        <a href="#" class="download-btn" onclick="startDownload('windows', event)">
+                            <span>📥 Download for Windows</span>
+                        </a>
+                        <div class="loading-bar" id="windowsProgress">
+                            <div class="loading-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="download-card">
+                        <div class="platform-icon">🐧</div>
+                        <h3 class="platform-name">Linux</h3>
+                        <p class="platform-description">
+                            Coming Soon
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="scroll-animate">
+            <div class="features-section">
+                <h2 class="section-title">Amazing Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Amazing Tracking</h3>
+                        <p class="feature-description">
+                            Track All Your Workouts In A Weekly Fixed Schedule Or A Custom Time Plan.
+                        </p>
+                    </div>
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Advanced Calculation</h3>
+                        <p class="feature-description">
+                            Tells You All You Need And What You Can Do.
+                        </p>
+                    </div>
+                    <div class="feature-card scroll-animate">
+                        <div class="feature-icon">🥗</div>
+                        <h3 class="feature-title">Nutrition Planning</h3>
+                        <p class="feature-description">
+                            Plan your meals, track macros, and get personalized nutrition recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="scroll-animate">
+            <div class="requirements-section">
+                <h2 class="section-title">System Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card scroll-animate">
+                        <h3 style="color: #32ff7e; margin-bottom: 1rem; font-size: 1.3rem;">🖥️ Windows</h3>
+                        <ul style="text-align: left; opacity: 0.9; line-height: 2;">
+                            <li>Windows 10 (64-bit) or newer</li>
+                            <li>4GB RAM minimum, 8GB recommended</li>
+                            <li>500MB available disk space</li>
+                            <li>DirectX 11 compatible graphics</li>
+                            <li>Internet connection for sync features</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card scroll-animate">
+                        <h3 style="color: #32ff7e; margin-bottom: 1rem; font-size: 1.3rem;">🐧 Linux</h3>
+                        <p style="text-align: center; opacity: 0.9; line-height: 2;">Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BetterLife. All rights reserved.</p>
+            <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
+                <span>By Omar Moustafa</span>
+                <img src="omar.png" alt="Omar Moustafa" class="omar-animated-logo" style="width: 48px; height: 48px;" />
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
